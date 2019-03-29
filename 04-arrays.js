@@ -70,3 +70,4 @@ console.log(avengers_assembeled.indexOf('Hulk'));
 console.log(avengers_assembeled.includes('Nick Fury'));
 
 
+for(const value of avengers){ console.log(value); } 
