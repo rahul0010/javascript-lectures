@@ -176,3 +176,34 @@ console.log(Numerals.get(3));
 console.log(Numerals.has(10));
 console.log(Numerals.size);
 
+const shiva = new Map([['lord', 'parmatma'],['evil','devel']]);
+console.log(shiva);
+console.log(shiva.size)
+
+const superman = {
+    name: 'superman',
+    'real name': 'henry',
+    height:  75,
+    weight: 382,
+    hero: true,
+    villain: false,
+    allies: ['Batman', 'Supergirl'],
+    charkha() {return 'chappa chappa charkha chale';}
+};
+console.log(superman);
+console.log(superman.charkha());
+console.log(superman["real name"]);
+
+const spiderman = new Object();
+const ddf = 'Iron Man';
+const realName = 'Tony Stark';
+const ironMan = { ddf, realName };
+console.log(ironMan.realName);
+
+const jj = { superman: { realName: 'Clark Kent' }, batman: { realName: 'Bruce Wayne' }, wonderWoman: { realName: "Diana Prince" }, flash: { realName: 'Barry Allen' }, aquaman: { realName: 'Arthur Curry' }, }
+console.log(jj.superman.realName);
+
+const batman = '{"name": "Batman","real name": "Bruce Wayne","height": 74, "weight": 210, "hero": true, "villain": false, "allies": ["Robin","Batgirl","Superman"]}'
+console.log(JSON.parse(batman));
+const wonderWoman = { name: 'Wonder Woman', 'real name': 'Diana Prince', height: 72, weight: 165, hero: true, villain: false, allies: ['Wonder Girl', 'Donna Troy', 'Superman'], lasso: function () { console.log('You will tell the truth!'); } } 
+console.log(JSON.stringify(wonderWoman));
